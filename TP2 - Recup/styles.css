@@ -1,0 +1,41 @@
+body {
+  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+  background: url(fondo.jpg) no-repeat;
+  background-size: cover;
+  color: rgb(0, 0, 0);
+  padding: 100px;
+  margin: 0;
+}
+
+.button {
+  background-color: #4c5eaf;
+  border: inset;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  padding: 10px 24px;
+  padding-top: 5px;
+  position: fixed;
+  width: 35%;
+}
+label {
+  color: #050302;
+  font-weight: bold;
+  display: contents;
+  width: 150px;
+  padding-top: 6px;
+  display: relative;
+}
+
+input {
+  position: relative;
+  width: 18%;
+  border-radius: 4px;
+  border: 2px solid black;
+  background-color: #ffffff;
+  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+  display: relative;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      TP 2 Recuperatorio - Leonel Cassani, Roman Lazzarini, Franco Juarez
+    </title>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <form action="review-form" @submit.prevent="submitFrom">
+        <label
+          >INGRESE UN STRING DE LETRAS:<input
+            type="text"
+            v-model="stringIngresado"
+        /></label>
+        <br />
+        <button class="button" @click="CalcularRuta">Analizar</button>
+
+        <div v-if="volveAlInicio == true && isActive == true">
+          <br />
+          <p>
+            <strong> <li>Se ha vuelto al inicio</li></strong>
+          </p>
+        </div>
+
+        <div v-if="volveAlInicio == false && isActive != false">
+          <br />
+          <p>
+            <strong> <li>No se ha vuelto al inicio</li></strong>
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
